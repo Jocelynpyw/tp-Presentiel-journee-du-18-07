@@ -31,3 +31,15 @@ var texte = document.createTextNode('Jocelyn Yemaleu')
 newpara.appendChild(texte)
 
 article.appendChild(newpara)
+//   a ce niveau je code la fomction qui va afficher le mot de passe lorqu'on va cliquer sur le font awesome
+var state = false;
+function toggle(){
+    if(state){
+        document.getElementById('password').setAttribute('type','text');
+        state=false;
+    }else{
+        document.getElementById('password').setAttribute('type','password');
+        state=true;
+
+    }
+}
